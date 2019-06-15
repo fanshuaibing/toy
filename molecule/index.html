@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<style>
+	*,*::after,*::before{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	body{
+		height: 800px;
+		width: 800px;
+		background: wheat;
+		position: relative;
+	}
+	.container0{
+		position: absolute;
+		top: 40px;
+		left: 40px;
+		align-items: center;
+		transform: rotate(30deg);
+	}
+
+	.container{
+		position: absolute;
+		top: 40px;
+		left: 40px;
+		align-items: center;
+		transform: rotate(30deg);
+	}
+	.circle1{
+		width: 40px ;
+		height: 40px;
+		background: #95A6A8;
+		border-radius: 50%;
+		border: 10px solid #E4E8E9;
+		opacity: 0.6;
+	}
+	.circle1{
+		margin-right: 50px;
+	}
+
+	.bar1{
+		 height: 2px;
+		 width: 100px;
+		 background: #A7AEAE;
+		 margin-top: -20px;
+		 margin-left: 30px;
+	 }
+	.container2{
+		position: absolute;
+		top: 110px;
+		left: 85px;
+		align-items: center;
+		transform: rotate(150deg);
+	}
+	.circle2{
+		width: 40px ;
+		height: 40px;
+		background: #95A6A8;
+		border-radius: 50%;
+		border: 10px solid #E4E8E9;
+		opacity: 0.6;
+		margin-right: 50px;
+		position: relative;
+	}
+	.circle2::after{
+		content: '';
+		width: 40px ;
+		height: 40px;
+		position: absolute;
+		left: 90px;
+		top: -10px;
+		background: #95A6A8;
+		border-radius: 50%;
+		border: 10px solid #E4E8E9;
+		opacity: 0.6;
+		margin-right: 50px;
+	}
+	.bar2{
+		height: 2px;
+		width: 80px;
+		background: #A7AEAE;
+		margin-top: -20px;
+		margin-left: 30px;
+	}
+	.bar3{
+		height: 2px;
+		width: 60px;
+		background: #A7AEAE;
+		margin-top: -20px;
+		margin-left: 30px;
+	}
+	.twoBall{
+		position: absolute;
+		bottom: 100px;
+		left: 100px;
+	}
+	.threeBall{
+		position: absolute;
+		bottom: 100px;
+		right: 100px;
+	}
+	.threeBall .container3{
+		transform: rotate(180deg);
+		position: absolute;
+		top: 95px;
+		left: 175px;
+	}
+	.threeBall .container4{
+		transform: rotate(120deg);
+		position: absolute;
+		top: 45px;
+		left: 160px;
+	}
+</style>
+<body>
+<div class="allWRapper">
+	<div class="container0">
+		<div class="circle1"></div>
+		<div class="bar1"></div>
+	</div>
+	<div class="twoBall">
+		<div class="container">
+			<div class="circle1"></div>
+			<div class="bar1"></div>
+		</div>
+		<div class="container2">
+			<div class="circle2"></div>
+			<div class="bar2"></div>
+		</div>
+	</div>
+	<div class="threeBall">
+		<div class="container">
+			<div class="circle1"></div>
+			<div class="bar1 tr-bar"></div>
+		</div>
+		<div class="container2">
+			<div class="circle2"></div>
+			<div class="bar2"></div>
+		</div>
+		<div class="container3">
+			<div class="circle1"></div>
+			<div class="bar3"></div>
+		</div>
+		<div class="container4">
+			<div class="circle1"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
